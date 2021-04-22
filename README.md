@@ -1,6 +1,6 @@
 # RickLocalization - Reinan Bruno
 
-### Todas Tecnologias e abordagens de software utilizadas no desenvolvimento:
+### :white_check_mark: Todas tecnologias e abordagens de software utilizadas no desenvolvimento:
 - .NET 5
 - Angular 9
 - Angular material
@@ -15,7 +15,7 @@
 - Auto Mapper
 - XUnit
 
-### Como rodar a aplicação:
+### :computer: Como rodar a aplicação:
 
 <b>O projeto da API estará rodando na porta https://localhost:5001/swagger</b>
 ```bash
@@ -37,7 +37,7 @@ $ npm install
 $ ng serve -o
 ```
 
-### Imagens da aplicação:
+### :camera: Imagens da aplicação:
 
 <table>
   <tr>
