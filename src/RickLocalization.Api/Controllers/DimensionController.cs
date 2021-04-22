@@ -1,11 +1,15 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RickLocalization.Application.Queries.Dimensions.GetAll;
+using System.Collections.Generic;
+using System.Net.Mime;
 using System.Threading.Tasks;
 
 namespace RickLocalization.Api.Controllers
 {
     [Route("api/[controller]/[action]")]
+    [Consumes(MediaTypeNames.Application.Json)]
     public sealed class DimensionController : Controller
     {
         private readonly IMediator _mediator;
@@ -19,11 +23,20 @@ namespace RickLocalization.Api.Controllers
         /// Carregar todas dimensões
         /// </summary>
         /// <response code="200">Listado com sucesso.</response>
-        /// <response code="404">Não houve dimensões encontrados.</response>
+        /// <response code="204">Não há contéudo.</response>
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetAllDimensionViewModel>))]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<IActionResult> GetAll([FromQuery] GetAllDimensionQuery request)
         {
-            return Ok(await _mediator.Send(request));
+            List<GetAllDimensionViewModel> response = await _mediator.Send(request);
+
+            if(response.Count == 0)
+            {
+                return NoContent();
+            }
+
+            return Ok(response);
         }
     }
 }
