@@ -21,7 +21,7 @@
 # Para rodar a API você deverá seguir os passos abaixo:
 $ cd src/RickLocalization.API
 $ dotnet run
-# O projeto da API estará rodando na porta https://localhost:5001/swagger
+- O projeto da API estará rodando na porta https://localhost:5001/swagger
 
 ---------------------------------------------------------------------------------
 
@@ -30,7 +30,7 @@ $ dotnet run
 $ cd src/RickLocalization.FrontEnd/ClientApp
 $ npm install
 $ ng serve -o
-# O projeto do Angular estará rodando na porta https://localhost:4200/
+- O projeto do Angular estará rodando na porta https://localhost:4200/
 
 ```
 
