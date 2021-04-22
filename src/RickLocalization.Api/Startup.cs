@@ -26,7 +26,7 @@ namespace RickLocalization.Api
             services.AddMediatR(assembly);
             services.AddResponseCompressionExtension();
             services.AddCorsExtension();
-            services.AddMvcExtension();
+            services.AddMvcExtension(assembly);
             services.AddControllersExtensions();
             services.AddSwaggerExtension();
             services.AddDataBaseExtension(_configuration);
