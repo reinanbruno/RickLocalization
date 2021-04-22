@@ -1,6 +1,6 @@
 # RickLocalization - Reinan Bruno
 
-### Todas Tecnologias e abordagens de software utilizadas no desenvolvimento:
+### :white_check_mark: Todas tecnologias e abordagens de software utilizadas no desenvolvimento:
 - .NET 5
 - Angular 9
 - Angular material
@@ -15,26 +15,29 @@
 - Auto Mapper
 - XUnit
 
-### Como rodar a aplicação:
+### :computer: Como rodar a aplicação:
 
+<b>O projeto da API estará rodando na porta https://localhost:5001/swagger</b>
 ```bash
 # Para rodar a API você deverá seguir os passos abaixo:
+
 $ cd src/RickLocalization.API
 $ dotnet run
-# O projeto da API estará rodando na porta https://localhost:5001/swagger
+```
 
 ---------------------------------------------------------------------------------
 
+<b>O projeto do Angular estará rodando na porta https://localhost:4200/</b>
+```bash
 # Para rodar o front-end em angular deverá primeiro executar o passo acima da API
-# após isso você irá abrir um novo terminal e executar os comandos abaixo:
+# após isso você irá abrir um novo terminal e deve executar os comandos abaixo:
+
 $ cd src/RickLocalization.FrontEnd/ClientApp
 $ npm install
 $ ng serve -o
-# O projeto do Angular estará rodando na porta https://localhost:4200/
-
 ```
 
-### Imagens da aplicação:
+### :camera: Imagens da aplicação:
 
 <table>
   <tr>
