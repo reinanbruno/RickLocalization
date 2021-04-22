@@ -1,0 +1,19 @@
+mat-form-field {
+  width: 90%;
+}
+
+.btn-sec {
+  margin-right: 1rem !important;
+  text-align: right;
+  margin-top: 1.5em;
+}
+
+.discard-btn {
+  margin: 5px;
+}
+
+.text-inside {
+  position: absolute;
+  left: 5px;
+  width: 100%;
+}

@@ -1,0 +1,45 @@
+<div>
+  <div class="add-title">
+    <h2 class="primary">Adicionar uma nova viagem</h2>
+  </div>
+  <form [formGroup]="form" (change)="formChanged()">
+    <mat-grid-list cols="2" [cols]="breakpoint" rowHeight="85px" (window:resize)="onResize($event)">
+      <mat-grid-tile>
+        <div class="text-inside">
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Dimensão atual" formControlName="currentDimension" required>
+            <mat-error *ngIf="form.controls.currentDimension.hasError('required')">
+              Campo é obrigatório
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <div class="text-inside">
+          <mat-form-field appearance="fill">
+            <mat-label>Dimensão de destino</mat-label>
+            <mat-select formControlName="newDimension" required>
+              <mat-option *ngFor="let item of dataDimensions" [value]="item">
+                {{item.name}}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="form.controls.newDimension.hasError('required')">
+              Campo é obrigatório
+            </mat-error>
+            <mat-error *ngIf="form.controls.newDimension.value?.id === data.dimensionCurrent.id">
+              Não pode viajar para mesma dimensão.
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+    <div class="btn-sec">
+      <button mat-raised-button type="submit" color="primary" class="update-btn" (click)="onSubmit()">Salvar</button>
+      <button mat-raised-button type="button" class="discard-btn" (click)="onCloseDialog()">Fechar</button>
+    </div>
+
+  </form>
+
+</div>

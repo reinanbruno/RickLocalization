@@ -1,0 +1,58 @@
+.details {
+  background-size: cover;
+  background-position: center;
+}
+
+.conteudo {
+  padding: 30px;
+  color: #fff;
+  min-height: calc(100vh - 154px);
+  background: -webkit-gradient(linear,left top,right top,color-stop(10%,#181818),color-stop(20%,rgba(23,23,23,.98)),color-stop(25%,rgba(23,23,23,.97)),color-stop(35%,rgba(23,23,23,.95)),color-stop(40%,rgba(23,23,23,.94)),color-stop(45%,rgba(23,23,23,.92)),color-stop(50%,rgba(23,23,23,.9)),color-stop(55%,rgba(23,23,23,.87)),color-stop(60%,rgba(23,23,23,.82)),color-stop(65%,rgba(23,23,23,.75)),color-stop(70%,rgba(23,23,23,.63)),color-stop(75%,rgba(23,23,23,.45)),color-stop(80%,rgba(23,23,23,.27)),color-stop(85%,rgba(23,23,23,.15)),color-stop(90%,rgba(23,23,23,.08)),color-stop(95%,rgba(23,23,23,.03)),to(rgba(23,23,23,0)));
+  background: -webkit-linear-gradient(left,#181818 10%,rgba(23,23,23,.98) 20%,rgba(23,23,23,.97) 25%,rgba(23,23,23,.95) 35%,rgba(23,23,23,.94) 40%,rgba(23,23,23,.92) 45%,rgba(23,23,23,.9) 50%,rgba(23,23,23,.87) 55%,rgba(23,23,23,.82) 60%,rgba(23,23,23,.75) 65%,rgba(23,23,23,.63) 70%,rgba(23,23,23,.45) 75%,rgba(23,23,23,.27) 80%,rgba(23,23,23,.15) 85%,rgba(23,23,23,.08) 90%,rgba(23,23,23,.03) 95%,rgba(23,23,23,0) 100%);
+  background: -moz-linear-gradient(left,#181818 10%,rgba(23,23,23,.98) 20%,rgba(23,23,23,.97) 25%,rgba(23,23,23,.95) 35%,rgba(23,23,23,.94) 40%,rgba(23,23,23,.92) 45%,rgba(23,23,23,.9) 50%,rgba(23,23,23,.87) 55%,rgba(23,23,23,.82) 60%,rgba(23,23,23,.75) 65%,rgba(23,23,23,.63) 70%,rgba(23,23,23,.45) 75%,rgba(23,23,23,.27) 80%,rgba(23,23,23,.15) 85%,rgba(23,23,23,.08) 90%,rgba(23,23,23,.03) 95%,rgba(23,23,23,0) 100%);
+  background: -o-linear-gradient(left,#181818 10%,rgba(23,23,23,.98) 20%,rgba(23,23,23,.97) 25%,rgba(23,23,23,.95) 35%,rgba(23,23,23,.94) 40%,rgba(23,23,23,.92) 45%,rgba(23,23,23,.9) 50%,rgba(23,23,23,.87) 55%,rgba(23,23,23,.82) 60%,rgba(23,23,23,.75) 65%,rgba(23,23,23,.63) 70%,rgba(23,23,23,.45) 75%,rgba(23,23,23,.27) 80%,rgba(23,23,23,.15) 85%,rgba(23,23,23,.08) 90%,rgba(23,23,23,.03) 95%,rgba(23,23,23,0) 100%);
+  background: linear-gradient(to right,#181818 10%,rgba(23,23,23,.98) 20%,rgba(23,23,23,.97) 25%,rgba(23,23,23,.95) 35%,rgba(23,23,23,.94) 40%,rgba(23,23,23,.92) 45%,rgba(23,23,23,.9) 50%,rgba(23,23,23,.87) 55%,rgba(23,23,23,.82) 60%,rgba(23,23,23,.75) 65%,rgba(23,23,23,.63) 70%,rgba(23,23,23,.45) 75%,rgba(23,23,23,.27) 80%,rgba(23,23,23,.15) 85%,rgba(23,23,23,.08) 90%,rgba(23,23,23,.03) 95%,rgba(23,23,23,0) 100%);
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.button-row > button {
+  background-color: #3f51b5;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.details-rick {
+  padding: 10px;
+}
+
+  .details-rick .dimension-origin .title {
+    margin: 20px 0;
+    color: #99F479;
+    font-size: 30px;
+  }
+
+  .details-rick .dimension-origin .subtitle {
+    margin: 20px 0;
+    color: #99F479;
+    font-size: 25px;
+  }
+
+  .details-rick .dimension-not-origin .title {
+    margin: 20px 0;
+    color: #ff8080;
+    font-size: 30px;
+  }
+
+  .details-rick .dimension-not-origin .subtitle {
+    margin: 20px 0;
+    color: #ff8080;
+    font-size: 25px;
+  }
+
+  .details-rick .txt {
+    margin-bottom: 30px;
+    line-height: 150%;
+    max-width: 500px;
+  }

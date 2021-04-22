@@ -1,0 +1,107 @@
+.list {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cards {
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  display: flex;
+  margin: 0px -16px -16px 0px;
+  justify-content:center;
+  margin-bottom:20px;
+}
+
+.card-item {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 25%;
+  padding: 0px 16px 16px 0px;
+}
+
+.mat-card-header {
+  display: flex;
+  margin-bottom: 20px;
+}
+.mat-card-image {
+  margin-bottom: 5px;
+  height: 250px !important;
+  width: 250px !important;
+  object-fit: cover;
+}
+
+.mat-card-header .card-header-title{
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-card-avatar {
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+}
+
+.mat-card-title {
+  font-weight: bold;
+  color: #6dc906;
+  border-radius:4px;
+}
+  .mat-card-title.morty {
+    color: #009999;
+  }
+
+.mat-card-actions {
+  display: flex;
+  justify-content: center;
+  margin: 0px !important;
+}
+
+  .mat-card-actions > button {
+    background-color: #0c8192;
+    color:#fff;
+    width:100%;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .mat-card-actions > button:hover {
+    background-color: #99f630;
+    color:#000;
+    font-weight:bold;
+  }
+  .card-item .mat-card {
+    transition: all .35s;
+    text-align:center;
+  }
+.card-item:hover img {
+  border-radius: 20px;
+  border:8px solid transparent;
+  width: 100%;
+  transition: all .35s;
+}
+
+.card-item:hover .mat-card {
+  color: #fff;
+  background-color: rgb(0,148,255, 0.5);
+}
+@media(max-width: 1024px) {
+  .card-item {
+    max-width: 33%;
+  }
+}
+
+@media(max-width: 768px) {
+  .card-item {
+    max-width: 50%;
+  }
+}
+
+@media(max-width: 640px) {
+  .card-item {
+    max-width: 100%;
+  }
+}

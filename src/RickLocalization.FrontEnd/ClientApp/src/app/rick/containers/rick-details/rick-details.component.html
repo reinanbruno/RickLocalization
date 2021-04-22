@@ -1,0 +1,38 @@
+<div class="details" *ngIf="dataDetails" style="background-image: url({{dataDetails.urlImage}})">
+  <div class="conteudo" >
+    <div class="button-row">
+      <button mat-button color="primary" (click)="openDialog()">
+        Adicionar uma viagem
+      </button>
+      <button mat-button color="primary" [routerLink]="'/ricks/' + url + '/travels'">
+        Verificar histórico de viagens
+      </button>
+    </div>
+
+    <div class="details-rick">
+      <div class="dimension-origin" *ngIf="dataDetails.dimensionOrigin.name === 'C-137'">
+        <h1 class="title">Parabéns! Você encontrou o Rick original da dimensão C-137!</h1>
+        <h1 class="subtitle">{{dataDetails.name}}</h1>
+      </div>
+      <div class="dimension-not-origin" *ngIf="dataDetails.dimensionOrigin.name !== 'C-137'">
+        <h1 class="title">Ops! Esse não é o Rick da dimensão C-137, mas continue procurando.</h1>
+        <h1 class="subtitle">{{dataDetails.name}}</h1>
+      </div>
+      <div class="txt">
+        {{dataDetails.description}}
+      </div>
+      <h3>Dimensão Atual</h3>
+      <div class="txt">
+        {{dataDetails.dimensionCurrent.name}}
+      </div>
+      <h3>Dimensão de Origem</h3>
+      <div class="txt">
+        {{dataDetails.dimensionOrigin.name}}
+      </div>
+
+    </div>
+  </div>
+
+ 
+
+</div>

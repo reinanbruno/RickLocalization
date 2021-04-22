@@ -1,0 +1,32 @@
+<div class="travel" *ngIf="dataTravel">
+  <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="index">
+      <mat-header-cell *matHeaderCellDef> Ordem </mat-header-cell>
+      <mat-cell *matCellDef="let element; let i = index;">{{(i + 1) + ((pageNumber - 1) * pageCurrent.pageSize)}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="nameDimensionBefore">
+      <mat-header-cell *matHeaderCellDef> Dimensão antes da viagem </mat-header-cell>
+      <mat-cell *matCellDef="let element" [ngClass]="{'rick-origin': element.nameDimensionBefore === null}">
+        {{element.nameDimensionBefore ? element.nameDimensionBefore : 'Rick foi criado nessa dimensão!' }}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="nameDimensionCurrent">
+      <mat-header-cell *matHeaderCellDef> Dimensão após a viagem</mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        {{element.nameDimensionCurrent}}
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+  <mat-paginator [length]="dataTravel.pageCount"
+                 [pageSize]="pageSize"
+                 (page)="onChangePage($event)">
+  </mat-paginator>
+
+</div>
