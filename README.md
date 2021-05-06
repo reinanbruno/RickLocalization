@@ -5,7 +5,8 @@
 - Angular 9
 - Angular material
 - Code First
-- CQRS
+- CQS
+- UnitOfWork
 - MediatR
 - Swagger
 - Entity framework Core
