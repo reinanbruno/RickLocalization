@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using RickLocalization.Application.Commands.DimensionsTravelled.Add;
 using RickLocalization.Core.Interfaces.Repositories;
 using RickLocalization.Core.Interfaces.UoW;
@@ -84,7 +84,7 @@ namespace RickLocalization.Test.Commands.DimensionsTravelled
             var dimensionTravelledResult = await addDimensionTravelledCommandHandler.Handle(addDimensionTravelledCommand, new System.Threading.CancellationToken());
 
             // Assert
-            Assert.True(dimensionTravelledResult.success);
+            Assert.False(dimensionTravelledResult.success);
 
         }
 
@@ -116,7 +116,7 @@ namespace RickLocalization.Test.Commands.DimensionsTravelled
             var dimensionTravelledResult = await addDimensionTravelledCommandHandler.Handle(addDimensionTravelledCommand, new System.Threading.CancellationToken());
 
             // Assert
-            Assert.True(dimensionTravelledResult.success);
+            Assert.False(dimensionTravelledResult.success);
 
         }
 
@@ -148,7 +148,7 @@ namespace RickLocalization.Test.Commands.DimensionsTravelled
             var dimensionTravelledResult = await addDimensionTravelledCommandHandler.Handle(addDimensionTravelledCommand, new System.Threading.CancellationToken());
 
             // Assert
-            Assert.True(dimensionTravelledResult.success);
+            Assert.False(dimensionTravelledResult.success);
 
         }
 
